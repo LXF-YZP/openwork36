@@ -63,30 +63,39 @@
     combos {
         compatible = "zmk,combos";
 
+
+        esc {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&kp ESC>; // ESC
+            layers = <0>;
+        };
+
         up {
             bindings = <&kp UP>;
-            key-positions = <16 28>;
-            layers = <0 1>;
+            key-positions = <3 15>;
+            layers = <0>;
             timeout-ms = <50>;
         };
 
         down {
             bindings = <&kp DOWN>;
-            key-positions = <28 40>;
+            key-positions = <15 27>;
             timeout-ms = <50>;
+            layers = <0>;
         };
 
         left {
             bindings = <&kp LEFT>;
-            key-positions = <27 28>;
-            layers = <0 1>;
+            key-positions = <14 15>;
+            layers = <0>;
             timeout-ms = <50>;
         };
 
         right {
             bindings = <&kp RIGHT>;
-            key-positions = <28 29>;
-            layers = <0 1>;
+            key-positions = <15 16>;
+            layers = <0>;
             timeout-ms = <50>;
         };
     };
