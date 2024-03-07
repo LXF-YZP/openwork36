@@ -150,7 +150,7 @@
 &kp CAPSLOCK  &kp A  &kp S       &kp D         &kp F      &kp G         &kp H          &kp J      &kp K      &kp L      &kp SEMI  &kp SQT
 &kp LSHFT     &kp Z  &kp X       &kp C         &kp V      &kp B         &kp N          &kp M      &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT
                      &kp LCTRL   &kp LEFT_ALT  &kp GRAVE                               &kp BSLH   &kp LBKT   &kp RBKT
-                     &kp RETURN  &mo 1         &lt 3 DOWN  &mt LGUI DEL  &kp BACKSPACE  &kp SPACE  &mo 2     &kp UP
+                     &kp RETURN  &mo 1         &lt 3 DOWN  &mt LGUI DEL  &kp BACKSPACE  &kp SPACE  &mo 2     &lt 4 UP
             >;
         };
 
@@ -190,7 +190,7 @@
         symbol_layer {
             label = "SYMBOL";
             bindings = <
-&none  &none           &none    &none    &none    &none         &none  &none     &none     &none  &none  &none
+&kp TILDE  &kp EXCL           &kp AT   &kp POUND   &kp DLLR   &kp PRCNT         &kp CARET &kp AMPS    &kp STAR     &kp LPAR  &kp RPAR &none
 &none  &none           &none    &none    &none    &none         &none  &none     &none     &none  &none  &none
 &none  &none           &none    &none    &none    &none         &none  &none     &none     &none  &none  &none
                        &none    &none    &none                         &none     &none     &none
