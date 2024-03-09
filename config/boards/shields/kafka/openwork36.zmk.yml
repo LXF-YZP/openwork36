@@ -11,5 +11,5 @@ features:
   - encoders
   - underglow
 siblings:
-  - openwork_left36
-  - openwork_right36
+  - openwork36_left
+  - openwork36_right
