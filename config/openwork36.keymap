@@ -12,53 +12,7 @@
 #define AS(keycode) &as LS(keycode) keycode
 
 / {
-    behaviors {
-        td0: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_0";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp ESC>, <&kp TAB>;
-        };
-    };
-
-    behaviors {
-        as: auto_shift {
-            compatible = "zmk,behavior-hold-tap";
-            label = "AUTO_SHIFT";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-
-        modcp: mod_copy {
-            compatible = "zmk,behavior-mod-morph";
-            label = "MOD_COPY";
-            #binding-cells = <0>;
-            bindings = <&as LS(C) C>, <&kp C>;
-
-            mods = <(LGUI | RGUI)>;
-        };
-    };
-
-    macros {
-        macro_email_q: macro_email_q {
-            // 714448168@qq.com
-
-            label = "MACRO_EMAIL_QQ";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp N7 &kp N1 &kp N4 &kp N4 &kp N4 &kp N8 &kp N1 &kp N6 &kp N8 &kp AT &kp Q &kp Q &kp DOT &kp C &kp O &kp M>;
-        };
-        GUANJIANCI: GUANJIANCI {
-            compatible = "zmk,behavior-macro";
-            label = "new_macro";
-            #binding-cells = <0>;
-            bindings = <&kp LSHIFT &kp LBKT &kp RBKT &kp LEFT &kp LSHIFT>;
-        };
-    };
+    
 
     combos {
         compatible = "zmk,combos";
