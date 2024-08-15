@@ -4,12 +4,8 @@ name: openwork36
 type: shield
 url: https://github.com/jimmerricks/swoop
 requires: [pro_micro]
-exposes: [i2c_oled]
 features:
   - keys
-  - display
-  - encoders
-  - underglow
 siblings:
   - openwork36_left
   - openwork36_right
